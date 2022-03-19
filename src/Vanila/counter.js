@@ -10,3 +10,9 @@ function Increment() {
     // 3. Logic
     countObj.innerHTML = count;
 }
+
+/**
+ * Problems
+ * - Globals
+ * - Lots of DOM interactions
+ */

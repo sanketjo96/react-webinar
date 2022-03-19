@@ -11,9 +11,9 @@
   <div class="app">
     <div id="vanila-app" class="tech">
       <div>
-        Count: <span id="count">0</span>
+        Count: <span id="count">123</span><span>/2</span>
       </div>
-      <buttom class="button" id="counter" onClick="Increment()">Increment</button>
+      <buttom class="button" id="counter" onClick="Increment()">Refresh</button>
     </div>
 
     <div id="react-app" class="tech"></div>
@@ -22,12 +22,16 @@
     <!-- React libs -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- App scripts -->
+    <script src="data/pList.js"></script>
     <script src="Vanila/counter.js"></script>
 
     <script src="React/button.js"></script>
-    <script src="React/counter.js"></script>
+    <!-- <script src="React/counter.js"></script> -->
+    <script type="text/babel" src="React/PlayerList.js"></script>
+    <script type="text/babel" src="React/counter-jsx.js" ></script>
 </body>
 
 </html>

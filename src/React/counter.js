@@ -6,7 +6,7 @@ class Counter extends React.Component {
         super();
 
         // 2. Initializing state to first value
-        this.state = { count: 0 };
+        this.state = { count: 223 };
     }
     increment() {
         this.setState({ count: ++this.state.count })
@@ -17,8 +17,8 @@ class Counter extends React.Component {
     // state changes over time 
     render() {
         return e('div', null,
-            e('div', null, "Count: ", e("span", null, this.state.count)),
-            e('button', { onClick: this.increment.bind(this), className: "button" }, 'Increment')
+            e('div', null, "Score: ", e("span", null, this.state.count), e("span", null, "/2")),
+            e('button', { onClick: this.increment.bind(this), className: "button" }, 'Refresh')
 
             // 5. Promote component re-use
             // e(RButton, {text: 'Increment', handler: this.increment.bind(this)})
@@ -29,3 +29,9 @@ class Counter extends React.Component {
 // 4. Injecting React element to the 
 const domContainer = document.getElementById('react-app');
 ReactDOM.render(e(Counter), domContainer);
+
+
+/**
+ * Problems
+ * - Lots of triggers to APIs
+ */
