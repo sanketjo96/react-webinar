@@ -19,9 +19,6 @@ class Counter extends React.Component {
         return e('div', null,
             e('div', null, "Score: ", e("span", null, this.state.count), e("span", null, "/2")),
             e('button', { onClick: this.increment.bind(this), className: "button" }, 'Refresh')
-
-            // 5. Promote component re-use
-            // e(RButton, {text: 'Increment', handler: this.increment.bind(this)})
         );
     }
 }
@@ -31,7 +28,13 @@ const domContainer = document.getElementById('react-app');
 ReactDOM.render(e(Counter), domContainer);
 
 
+
 /**
- * Problems
- * - Lots of triggers to APIs
+ * Pros
+ * - Can feel entity which can be reusable.
+ */
+
+/**
+ * Cons
+ * - Lots of complecated looking APIs
  */

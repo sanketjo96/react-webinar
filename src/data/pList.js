@@ -5,17 +5,17 @@ const players = [
         Runs: 100
     },
     {
-        id: 1,
+        id: 2,
         name: 'Rahul',
         Runs: 40
     },
     {
-        id: 1,
+        id: 3,
         name: 'Virendra',
         Runs: 58
     },
     {
-        id: 1,
+        id: 4,
         name: 'VVS',
         Runs: 76
     }

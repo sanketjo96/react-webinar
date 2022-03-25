@@ -11,8 +11,15 @@ function Increment() {
     countObj.innerHTML = count;
 }
 
+
 /**
- * Problems
- * - Globals
- * - Lots of DOM interactions
+ * Pros
+ * - Looks very simple.
+ */
+
+/**
+ * Cons
+ * - Globals.
+ * - Lots of DOM interactions.
+ * - Unmanagable With growing code.
  */

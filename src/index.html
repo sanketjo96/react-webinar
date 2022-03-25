@@ -10,28 +10,38 @@
 <body>
   <div class="app">
     <div id="vanila-app" class="tech">
+      <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"/>
       <div>
         Score: <span id="count">123</span><span>/2</span>
       </div>
       <buttom class="button" id="counter" onClick="Increment()">Refresh</button>
     </div>
 
-    <div id="react-app" class="tech"></div>
+    <div class="tech">
+      <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"/>
+      <div id="react-app"></div>
+    </div>
+
   </div>
   <div>
     <!-- React libs -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Helping libs -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- App scripts -->
+    <!-- App data -->
     <script src="data/pList.js"></script>
+
+    <!-- App scripts -->
     <script src="Vanila/counter.js"></script>
 
     <script src="React/button.js"></script>
-    <!-- <script src="React/counter.js"></script> -->
-    <script type="text/babel" src="React/PlayerList.js"></script>
-    <script type="text/babel" src="React/counter-jsx.js" ></script>
+    <script src="React/counter.js"></script>
+
+    <!-- <script type="text/babel" src="React/PlayerList.js"></script>
+    <script type="text/babel" src="React/counter-jsx.js" ></script> -->
 </body>
 
 </html>
